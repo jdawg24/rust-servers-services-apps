@@ -1,27 +1,27 @@
 [package]
 name = "tutor-db"
 version = "0.1.0"
-authors = ["peshwar9"]
+authors = ["jdawg24"]
 edition = "2021"
 
 
 [dependencies]
 #Actix web framework and run-time
-actix-web = "4.2.1"
-actix-rt = "2.7.0"
+actix-web = "4.5.1"
+actix-rt = "2.9.0"
 
 # Environment access
 dotenv = "0.15.0"
 
 # Database access
-sqlx = {version = "0.6.2", default_features = false, features = ["postgres","runtime-tokio-native-tls", "macros","chrono"]}
+sqlx = {version = "0.6.3", default_features = false, features = ["postgres","runtime-tokio-native-tls", "macros","chrono"]}
 
 
 # Data serialization library
-serde = { version = "1.0.144", features = ["derive"] }
+serde = { version = "1.0.197", features = ["derive"] }
 
 # Other utils
-chrono = {version = "0.4.22", features = ["serde"]}
+chrono = {version = "0.4.35", features = ["serde"]}
 
 # Openssl for linux build
-openssl = { version = "0.10.41", features = ["vendored"] }
+openssl = { version = "0.10.64", features = ["vendored"] }
